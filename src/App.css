@@ -1,0 +1,216 @@
+
+  
+  .left-fix-content {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 20px;
+  }
+  
+  .right-fix-content {
+    flex: 1;
+  }
+  
+  /* Large screens (desktop) */
+  @media (min-width: 1024px) {
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .left-fix-content {
+      margin-bottom: 0;
+    }
+  
+    .right-fix-content {
+      flex: 1;
+    }
+  }
+  
+  /* Medium screens (tablet) */
+  @media (max-width: 1024px) and (min-width: 768px)  {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    
+  
+    .left-fix-content {
+      width: 90%;
+      max-width: 350px;
+      margin-bottom: 20px;
+    }
+  
+    .right-fix-content {
+      width: 90%;
+    }
+  }
+  
+  /* Small screens (mobile) */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+
+
+    .responced{
+      padding: 10px;
+    }
+
+   
+  
+    .left-fix-content {
+      width: 100%;
+      max-width: none;
+      margin-bottom: 10px;
+    }
+  
+    .right-fix-content {
+      width: 100%;
+    }
+  }
+
+  
+  .bottom-content {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff; /* Optional */
+    padding: 10px; /* Optional */
+  }
+
+  
+
+  .moving-text-container {
+    overflow: hidden;
+  
+  }
+  
+  .moving-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 10s linear infinite;
+  }
+  
+  @keyframes scrollText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+
+
+  @keyframes zoomInOut {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes popupZoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .animate-popup {
+    animation: popupZoom 1.5s ease-in-out infinite;
+  }
+
+  .responced {
+    background-color:  #3f51b524;
+    padding: 20px;
+   
+   
+
+    
+  }
+
+
+
+  /* Hide Scrollbar but keep scrolling */
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+
+
+
+
+
+  
+
+
+  /* CSS class */
+.card {
+  transition: transform 0.3s ease; /* Transition for smooth effect */
+}
+
+.card:hover {
+  transform: scale(0.95); /* Scale down to 90% on hover */
+}
+
+
+
+
+
+
+
+
+/* Add this CSS in your global styles or inside a <style> tag */
+.zoom-effect {
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.zoom-effect:hover {
+  transform: scale(0.95); /* Scale the image up by 10% when hovered */
+}
+
+
+.element {
+  transition: transform 1s;
+}
+
+
+
+/* Add this to your CSS file (e.g., styles.css) */
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5); /* Zoom in */
+  }
+  100% {
+    transform: scale(1); /* Zoom out */
+  }
+}
+
+.zoom-icon {
+  animation: zoomInOut 2s infinite; /* 2 seconds duration, infinite looping */
+}
+
+
+
+
+
