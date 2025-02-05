@@ -34,7 +34,7 @@ export default function Header() {
         darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center p-4 md:p-6">
+      <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="w-28 lg:w-40 h-auto" />

@@ -49,8 +49,6 @@ export default function About() {
   }, []);
 
   return (
-
-    
     <div className=" bg-white shadow-md rounded-2xl p-6 sm:p-8 ">
       <div className="lg:flex justify-between items-center sm:items-start mb-6">
         <h2 className="text-xl lg:text-3xl mb-4 sm:mb-0">
@@ -131,7 +129,10 @@ export default function About() {
           Education History
         </h3>
         {educationData.map((edu, index) => (
-          <div key={index} className="flex flex-col sm:flex-row justify-between bg-gray-50 hover:bg-gray-100 p-4 rounded-md mb-4 hover:shadow-md hover:shadow-purple-200">
+          <div
+            key={index}
+            className="flex flex-col sm:flex-row justify-between bg-gray-50 hover:bg-gray-100 p-4 rounded-md mb-4 hover:shadow-md hover:shadow-purple-200"
+          >
             <div className="sm:w-1/2">
               <h2 className="text-xl font-semibold">{edu.degree}</h2>
               <p className="text-gray-600">{edu.year}</p>
@@ -140,7 +141,9 @@ export default function About() {
               <i className={`fa-solid ${edu.icon} text-yellow-500 mr-2`}></i>
               <h5>{edu.gpa}</h5>
             </div>
-            <h3 className="bg-white text-purple-500 py-2 rounded-md px-2">{edu.institution} <i className="fa-solid fa-arrow-right"></i></h3>
+            <h3 className="bg-white text-purple-500 py-2 rounded-md px-2">
+              {edu.institution} <i className="fa-solid fa-arrow-right"></i>
+            </h3>
           </div>
         ))}
       </div>
@@ -186,8 +189,8 @@ export default function About() {
         </div>
       </div>
 
-           {/* Marquee Section */}
-           <marquee className="bg-gray-100 p-4 rounded-md space-x-8 text-xl">
+      {/* Marquee Section */}
+      <marquee className="bg-gray-100 p-4 rounded-md space-x-8 text-xl">
         <a href="/">Let's 👋 Work Together</a>
         <a href="/">Let's 👋 Work Together</a>
         <a href="/">Let's 👋 Work Together</a>

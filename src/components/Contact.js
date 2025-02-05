@@ -125,10 +125,10 @@ export default function Contact() {
         </p>
       </div>
       <div className="lg:flex flex-wrap gap-4">
-        <button className="mb-4 lg:mb-0 sm:w-auto bg-purple-500 text-white shadow-md rounded-md px-4 py-4 font-semibold flex items-center gap-2 card">
+        <button className="mb-4 lg:mb-0 sm:w-auto bg-purple-500 text-white shadow-md rounded-md px-4 py-4 font-semibold flex items-center gap-2 hover:shadow-xl hover:shadow-purple-200">
           <i className="fa-solid fa-phone-volume"></i> Book A Call
         </button>
-        <button className="mt-2 lg:mt-0 sm:w-auto bg-white shadow-md rounded-md px-4 py-4 font-semibold flex items-center gap-2 card">
+        <button className="mt-2 lg:mt-0 sm:w-auto bg-white shadow-md rounded-md px-4 py-4 font-semibold flex items-center gap-2 hover:shadow-xl hover:shadow-purple-200 ">
           <i className="fa-regular fa-copy"></i> Copy Email
         </button>
       </div>
