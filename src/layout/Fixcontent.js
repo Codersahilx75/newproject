@@ -3,9 +3,9 @@ import img from "../assets/img/profile.png";
 
 export default function Fixcontent() {
   return (
-    <div className="mx-auto">
-      <div className="bg-white rounded-2xl shadow-md h-[63vh] md:h-[40vh] lg:h-[77vh] w-full sm:w-[90%] md:w-[80%] mb-6 lg:mb-2 lg:w-[350px] hover:shadow-lg hover:shadow-purple-300">
-        <div className="py-4 px-4">
+    <div className=" mx-auto">
+      <div className="bg-white rounded-md   h-[63vh] md:h-[40vh] lg:h-[77vh] w-full sm:w-[90%] md:w-[80%] mb-6 lg:mb-2 lg:w-[350px] hover:shadow-lg hover:shadow-purple-300">
+        <div className="px-4 py-2">
           {/* Profile Image */}
           <img src={img} alt="Profile" className="w-50% h-50% mx-auto mb-6" />
           <h2 className="text-2xl font-semibold mb-2">Aashish Bhagwat 👋</h2>

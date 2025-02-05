@@ -49,7 +49,9 @@ export default function About() {
   }, []);
 
   return (
-    <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 ">
+
+    
+    <div className=" bg-white shadow-md rounded-2xl p-6 sm:p-8 ">
       <div className="lg:flex justify-between items-center sm:items-start mb-6">
         <h2 className="text-xl lg:text-3xl mb-4 sm:mb-0">
           Hi, This is <span className="text-purple-500">Aashish Bhagwat</span>{" "}

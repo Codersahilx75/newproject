@@ -19,11 +19,9 @@ export default function Home() {
     setSelectedImage(null); // Clear the selected image
   };
 
-  
-
   return (
     <>
-      <div className="flex flex-col lg:flex-row lg:space-x-6 space-y-6 lg:space-y-0 ">
+      <div className=" flex flex-col lg:flex-row lg:space-x-6 space-y-6 lg:space-y-0 ">
         {/* Left Column */}
         <div className="flex-1 flex flex-col space-y-6 lg:space-y-8 ">
           {/* My Journey */}
@@ -45,9 +43,25 @@ export default function Home() {
           <div className="bg-white shadow-md rounded-2xl px-2 py-6 md:px-10 md:py-12 flex flex-col space-y-6 mt-4 flex-grow hover:shadow-xl hover:shadow-purple-200">
             <h2 className="text-2xl font-bold md:text-left">Work Experience</h2>
             <div>
-              {[{year: "2022 - 2025", logo: logo1, company: "CreativeHand", position: "CTO | Co-Founder"},
-                {year: "2022 - 2023", logo: wipro, company: "Wipro", position: "Full Stack Developer"},
-                {year: "2017 - 2022", logo: tudip, company: "Tudip Technologies", position: "Full Stack Developer"}
+              {[
+                {
+                  year: "2022 - 2025",
+                  logo: logo1,
+                  company: "CreativeHand",
+                  position: "CTO | Co-Founder",
+                },
+                {
+                  year: "2022 - 2023",
+                  logo: wipro,
+                  company: "Wipro",
+                  position: "Full Stack Developer",
+                },
+                {
+                  year: "2017 - 2022",
+                  logo: tudip,
+                  company: "Tudip Technologies",
+                  position: "Full Stack Developer",
+                },
               ].map((experience, index) => (
                 <div
                   key={index}
@@ -79,7 +93,7 @@ export default function Home() {
           </div>
 
           {/* My Expert Area */}
-          <div className="bg-white shadow-md rounded-2xl mt-4 px-6 py-8 lg:py-28 flex-grow hover:shadow-xl hover:shadow-purple-200">
+          <div className="bg-white shadow-md rounded-2xl mt-4 px-6 py-8 lg:py-16 flex-grow hover:shadow-xl hover:shadow-purple-200">
             <h2 className="text-xl font-bold mb-4">My Expert Area</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {expertAreas.map((area) => (
@@ -109,26 +123,45 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 mt-6">
-            {[{src: banner1, alt: "Project 1", href: "https://indistays.com/home", name: "Visit Indistays"},
-              {src: banner2, alt: "Project 2", href: "https://www.e8matrix.com/", name: "Visit E8 Matrix"},
-              {src: banner3, alt: "Project 3", href: "https://infixlogistics.com/home", name: "Visit Infix Logistics"},
-              {src: banner4, alt: "Project 4", href: "https://chromewebstore.google.com/detail/linkedin-auto-commenter/pagjldpgebbhhfekjghppoajdmdhbpee", name: "Visit LinkedIn Auto Commenter"}
+            {[
+              {
+                src: banner1,
+                alt: "Project 1",
+                href: "https://indistays.com/home",
+                name: "Visit Indistays",
+              },
+              {
+                src: banner2,
+                alt: "Project 2",
+                href: "https://www.e8matrix.com/",
+                name: "Visit E8 Matrix",
+              },
+              {
+                src: banner3,
+                alt: "Project 3",
+                href: "https://infixlogistics.com/home",
+                name: "Visit Infix Logistics",
+              },
+              {
+                src: banner4,
+                alt: "Project 4",
+                href: "https://chromewebstore.google.com/detail/linkedin-auto-commenter/pagjldpgebbhhfekjghppoajdmdhbpee",
+                name: "Visit LinkedIn Auto Commenter",
+              },
             ].map((banner, index) => (
-              <div key={index} className=" group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl hover:shadow-purple-200  ">
+              <div
+                key={index}
+                className=" group bg-white p-6  rounded-2xl shadow-md hover:shadow-xl hover:shadow-purple-200  "
+              >
                 <img
                   src={banner.src}
                   alt={banner.alt}
                   className="w-full h-auto rounded-2xl cursor-pointer hover:shadow-xl hover:shadow-purple-200 "
                   onClick={() => openModal(banner.src)} // Open modal on image click
                 />
-                <a
-                  href={banner.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=" bg-purple-600 text-white px-3 py-2 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm"
-                >
+                <div className="bg-purple-500 text-white text-sm px-3 py-2 mt-2 inline-block rounded-md cursor-pointer">
                   {banner.name}
-                </a>
+                </div>
               </div>
             ))}
           </div>

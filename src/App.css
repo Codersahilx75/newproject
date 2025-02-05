@@ -211,6 +211,35 @@
 }
 
 
+/* Basic container styling */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+ 
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+      width: 95%;
+      padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      width: 100%;
+      padding: 10px;
+      border-radius: 0;
+  }
+}
+
+
+
+
 
 
 

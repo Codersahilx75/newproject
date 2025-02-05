@@ -37,7 +37,7 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center p-4 md:p-6">
         {/* Logo */}
         <div className="flex items-center">
-          <img src={logo} alt="Logo" className="w-28 h-auto" />
+          <img src={logo} alt="Logo" className="w-28 lg:w-40 h-auto" />
         </div>
 
         {/* Navbar Links (Desktop) */}
@@ -63,7 +63,7 @@ export default function Header() {
           </button>
           <a
             href="/path/to/resume.pdf"
-            className="bg-gray-800 text-white hover:text-purple-600 px-5 py-4 rounded-md  text-md"
+            className="bg-gray-800 text-white hover:text-purple-600 px-6 py-3 rounded-md  text-md"
           >
             <i className="fas fa-download"></i> Resume
           </a>
