@@ -159,8 +159,14 @@ export default function Home() {
                   className="w-full h-auto rounded-2xl cursor-pointer hover:shadow-xl hover:shadow-purple-200 "
                   onClick={() => openModal(banner.src)} // Open modal on image click
                 />
-                <div className="bg-purple-500 text-white text-sm px-3 py-2 mt-2 inline-block rounded-md cursor-pointer">
-                  {banner.name}
+                <div className="bg-purple-500 text-white text-sm px-3 py-2 mt-2 inline-block rounded-md cursor-pointer group">
+                  <a
+                    href={banner.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {banner.name}
+                  </a>
                 </div>
               </div>
             ))}
