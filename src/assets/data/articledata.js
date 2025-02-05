@@ -27,7 +27,7 @@ const articleData = [
   },
   {
     image: img4,
-    title: "Want to Upgrade Your Brain? Stop Doing These 7 Things",
+    title: "My Next Comming Soon Blog",
     description: " . 15 min read . Jan 1,2025",
     link: "https://example.com/article4",
     buttonText: " Upgrade Tips", // Custom button text

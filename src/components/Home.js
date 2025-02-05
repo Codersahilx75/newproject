@@ -187,7 +187,7 @@ export default function Home() {
             <img
               src={selectedImage}
               alt="Selected Project"
-              className="w-full h-auto"
+              className="w-full h-full"
             />
             <button
               className="absolute top-4 right-4 text-white bg-red-500 rounded-full p-2"

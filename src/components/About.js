@@ -169,14 +169,15 @@ export default function About() {
                     className="w-full h-48 object-cover rounded-md  hover:shadow-lg card hover:shadow-purple-200"
                   />
                   {/* Button at the top-left corner, hidden by default and shown on hover */}
+                  <div className="bg-purple-500 text-white text-sm px-3 py-2 mt-2 inline-block rounded-md cursor-pointer group">
                   <a
                     href={data.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bottom-2 left-2 bg-purple-500 text-white py-2 px-4 rounded-md text-sm hover:bg-purple-600 transition-all opacity-0 group-hover:opacity-90"
                   >
-                    {data.buttonText}
+                    {data.title}
                   </a>
+                </div>
                 </div>
 
                 <h2 className="text-xl font-semibold hover:text-purple-500 mt-4">

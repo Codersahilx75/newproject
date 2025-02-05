@@ -33,22 +33,18 @@ export default function Dashboard() {
       <Header />
 
       {/* Main Content Wrapper */}
-      <div className="lg:flex flex-1 mt-5 overflow-auto">
-        {/* Sidebar (Becomes Non-Fixed When Footer is Visible) */}
+      <div className="lg:flex flex-1 mt-5">
+        {/* Sidebar (Fixcontent) */}
         <div
-          className={`lg:w-1/4 w-full ${
-            isFooterVisible
-              ? "lg:h-auto"
-              : "lg:h-screen lg:fixed lg:overflow-auto"
+          className={`lg:w-1/4 w-full transition-all duration-300 ${
+            isFooterVisible ? "lg:relative lg:h-auto" : "lg:fixed lg:h-screen lg:overflow-auto"
           }`}
         >
-          <Fixcontent
-           
-          />
+          <Fixcontent />
         </div>
 
         {/* Main Content */}
-        <div className="lg:w-3/4 w-full lg:ml-[25%]">
+        <div className="lg:w-3/4 w-full lg:ml-[25%] overflow-y-auto">
           <AppRoutes />
         </div>
       </div>
