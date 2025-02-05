@@ -55,7 +55,7 @@ export default function About() {
           Hi, This is <span className="text-purple-500">Aashish Bhagwat</span>{" "}
           👋
         </h2>
-        <h3 className="text-purple-500 bg-gray-100 p-4 lg:p-2 rounded-md flex items-center shadow-md card hover:shadow-lg hover:shadow-purple-200">
+        <h3 className="text-purple-500 bg-gray-100 p-4 lg:p-2 rounded-md flex items-center shadow-md  hover:shadow-lg hover:shadow-purple-200">
           <i className="fa-solid fa-circle text-sm mr-2 "></i>
           Available For Hire
         </h3>
@@ -93,7 +93,7 @@ export default function About() {
             {[...cardData, ...cardData].map((data, index) => (
               <div
                 key={index}
-                className="bg-gray-100 p-4 rounded-md shadow-md flex-shrink-0 w-full sm:w-1/3 mx-2 card hover:shadow-lg hover:shadow-purple-200"
+                className="bg-gray-100 p-4 rounded-md shadow-md flex-shrink-0 w-full sm:w-1/3 mx-2 hover:shadow-lg hover:shadow-purple-200"
               >
                 <div className="flex flex-col sm:flex-row justify-between">
                   <div className="flex space-x-2">
@@ -129,7 +129,7 @@ export default function About() {
           Education History
         </h3>
         {educationData.map((edu, index) => (
-          <div key={index} className="flex flex-col sm:flex-row justify-between bg-gray-50 hover:bg-gray-100 p-4 rounded-md mb-4 card hover:shadow-md hover:shadow-purple-200">
+          <div key={index} className="flex flex-col sm:flex-row justify-between bg-gray-50 hover:bg-gray-100 p-4 rounded-md mb-4 hover:shadow-md hover:shadow-purple-200">
             <div className="sm:w-1/2">
               <h2 className="text-xl font-semibold">{edu.degree}</h2>
               <p className="text-gray-600">{edu.year}</p>
@@ -161,7 +161,7 @@ export default function About() {
                   <img
                     src={data.image}
                     alt={data.title}
-                    className="w-full h-48 object-cover rounded-md card hover:shadow-lg hover:shadow-purple-200"
+                    className="w-full h-48 object-cover rounded-md  hover:shadow-lg card hover:shadow-purple-200"
                   />
                   {/* Button at the top-left corner, hidden by default and shown on hover */}
                   <a

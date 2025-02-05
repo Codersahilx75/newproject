@@ -39,7 +39,7 @@ export default function Services() {
     <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 ">
       <div className="lg:flex justify-between sm:items-start mb-6">
         <h2 className="text-3xl font-semibold sm:text-left">Services</h2>
-        <h3 className="text-purple-500 bg-gray-100 p-4 lg:p-2 rounded-md flex items-center shadow-md card hover:shadow-lg hover:shadow-purple-200">
+        <h3 className="text-purple-500 bg-gray-100 p-4 lg:p-2 rounded-md flex items-center shadow-md  hover:shadow-lg hover:shadow-purple-200">
           <i className="fa-solid fa-circle text-sm  mr-2"></i>
           Available For Hire
         </h3>
@@ -55,7 +55,7 @@ export default function Services() {
         {iconData.map((service) => (
           <div
             key={service.id}
-            className="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-md hover:bg-purple-100 card hover:shadow-lg hover:shadow-purple-200"
+            className="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-md hover:bg-purple-100 hover:shadow-lg hover:shadow-purple-200"
           >
             <i
               className={`fa-solid ${service.icon} text-6xl text-purple-400 mb-4 bg-white p-4 rounded-md transition-transform duration-300 group-hover:rotate-12`}
@@ -78,7 +78,7 @@ export default function Services() {
               key={img.id}
               src={img.src}
               alt={img.alt}
-              className="w-16 h-12 lg:w-20 lg:h-20 object-contain rounded-lg shadow-md card  hover:shadow-lg hover:shadow-purple-200"
+              className="w-16 h-12 lg:w-20 lg:h-20 object-contain rounded-lg shadow-md   hover:shadow-lg hover:shadow-purple-200"
             />
           ))}
         </div>
@@ -97,7 +97,7 @@ export default function Services() {
             {[...cardData, ...cardData].map((data, index) => (
               <div
                 key={index}
-                className="bg-gray-100 p-4 rounded-md shadow-md flex-shrink-0 w-full sm:w-1/3 mx-2 card hover:shadow-lg hover:shadow-purple-200 "
+                className="bg-gray-100 p-4 rounded-md shadow-md flex-shrink-0 w-full sm:w-1/3 mx-2  hover:shadow-lg hover:shadow-purple-200 "
               >
                 <div className="flex flex-col sm:flex-row justify-between">
                   <div className="flex space-x-2">
@@ -135,7 +135,7 @@ export default function Services() {
         {educationData.map((edu, index) => (
           <div
             key={index}
-            className="flex flex-col sm:flex-row justify-between bg-gray-50 shadow-md p-4 rounded-md mb-4 card hover:shadow-lg hover:shadow-purple-200"
+            className="flex flex-col sm:flex-row justify-between bg-gray-50 shadow-md p-4 rounded-md mb-4  hover:shadow-lg hover:shadow-purple-200"
           >
             <div className="sm:w-1/2">
               <h2 className="text-xl font-semibold">{edu.degree}</h2>

@@ -118,7 +118,7 @@ export default function Home() {
                 <img
                   src={banner.src}
                   alt={banner.alt}
-                  className="w-full h-auto rounded-2xl cursor-pointer hover:shadow-xl hover:shadow-purple-200 card"
+                  className="w-full h-auto rounded-2xl cursor-pointer hover:shadow-xl hover:shadow-purple-200 "
                   onClick={() => openModal(banner.src)} // Open modal on image click
                 />
                 <a

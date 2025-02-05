@@ -63,7 +63,7 @@ export default function Blog() {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-auto object-cover mb-4 rounded-xl card hover:shadow-xl hover:shadow-purple-200"
+                className="w-full h-auto object-cover mb-4 rounded-xl  hover:shadow-xl hover:shadow-purple-200"
               />
 
               <div className="lg:flex justify-between w-full">
